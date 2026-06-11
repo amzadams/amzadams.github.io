@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV — Abdul-Manan Zakari Adams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">AMZ</a>
+      <ul class="nav-links">
+        <li><a href="research.html">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html" class="active">CV</a></li>
+        <li><a href="misc.html" class="nav-misc">Misc</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="page-header">
+      <a href="index.html" class="back-link">← Home</a>
+      <h1>Curriculum Vitae</h1>
+      <p>A summary of my academic background, research experience, and technical skills.</p>
+      <div style="margin-top: 1.25rem;">
+        <a href="cv.pdf" class="btn-primary" style="font-size: 13px;">Download PDF</a>
+      </div>
+    </div>
+
+    <section class="cv-section">
+      <h2>Education</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">2023 &mdash; present</div>
+        <div>
+          <h3>PhD, Electrical and Computer Engineering</h3>
+          <p>University of North Dakota, Grand Forks, ND</p>
+          <p>Supervisor: Dr. Ahmed Abdelhadi</p>
+          <p>Focus: quantum computing applications in wireless networks</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-year">Prior</div>
+        <div>
+          <h3>BSc, Electrical and Computer Engineering</h3>
+          <p><!-- Add institution here --></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Research experience</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">2023 &mdash; present</div>
+        <div>
+          <h3>Graduate Research Assistant, UND</h3>
+          <p>
+            Quantum computing implementations in Qiskit, QAOA for network optimization,
+            noise modeling with qiskit-aer, wireless channel analysis, and 6G systems research.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Publications</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">2026</div>
+        <div>
+          <h3>RSMA-Enabled RIS-Assisted ISAC for 6G: A Comprehensive Survey</h3>
+          <p>IEEE Access, vol. 14, pp. 38392–38420</p>
+          <p><a href="https://ieeexplore.ieee.org/abstract/document/11426895" target="_blank" rel="noopener">IEEE Xplore ↗</a></p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-year">2026</div>
+        <div>
+          <h3>QAOA-Based Multi-Hop Relay Path Selection Using Fade Duration</h3>
+          <p>IEEE CARS 2026 &mdash; under review</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-year">2026</div>
+        <div>
+          <h3>Password Recovery Using Partitioned Grover's Algorithm</h3>
+          <p>IEEE CARS 2026 &mdash; under review</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Technical skills</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">Quantum</div>
+        <div>
+          <p>Qiskit 2.3.1, qiskit-aer 0.17.2, quantum circuit design, QUBO formulation, QAOA, Grover's algorithm, noise modeling</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-year">Programming</div>
+        <div>
+          <p>Python, MATLAB, LaTeX, NumPy, SciPy, Matplotlib</p>
+        </div>
+      </div>
+
+      <div class="cv-entry">
+        <div class="cv-year">Wireless</div>
+        <div>
+          <p>Channel modeling, fade analysis, relay networks, RIS simulation, RSMA, ISAC systems</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cv-section">
+      <h2>Teaching</h2>
+
+      <div class="cv-entry">
+        <div class="cv-year">2023 &mdash; present</div>
+        <div>
+          <h3>Graduate Teaching Assistant, UND</h3>
+          <p>ECE 321 Signals and Systems, ECE 461 Introduction to Communications</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Abdul-Manan Zakari Adams &copy; 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/amzadams" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/11426895" target="_blank" rel="noopener">IEEE Xplore</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
