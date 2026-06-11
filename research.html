@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research — Abdul-Manan Zakari Adams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">AMZ</a>
+      <ul class="nav-links">
+        <li><a href="research.html" class="active">Research</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="misc.html" class="nav-misc">Misc</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="page-header">
+      <a href="../index.html" class="back-link">← Home</a>
+      <h1>Research</h1>
+      <p>
+        My work sits at the intersection of quantum computing and wireless communications.
+        I focus on practical implementations on near-term quantum hardware and on applying
+        quantum algorithms to real network optimization problems.
+      </p>
+    </div>
+
+    <div class="research-group">
+      <div class="research-group-label">Quantum computing</div>
+
+      <div class="research-card" id="grover">
+        <div class="paper-meta" style="margin-bottom: 0.75rem;">
+          <span class="paper-status under-review">Under review &mdash; IEEE CARS 2026</span>
+        </div>
+        <h3>Password Recovery Using Partitioned Grover's Algorithm</h3>
+        <p>
+          Grover's algorithm offers a quadratic speedup over classical brute-force search, which
+          makes it a credible long-term threat to password-based authentication schemes including
+          bcrypt, PBKDF2, and Argon2. The barrier to practical use on current hardware is
+          significant: restricted qubit counts and short coherence windows make full-circuit
+          execution infeasible for any realistic password length.
+        </p>
+        <p>
+          This work introduces a partitioned Grover framework that addresses the hardware gap
+          directly. The password is divided into two parts: a quantum part searched by Grover's
+          algorithm and a classical part enumerated by a coordinator process. A formal
+          threshold-based detection criterion separates correct from incorrect classical
+          partitions. The framework scales across partition sizes of m = 3, 4, 5, and 6 qubits,
+          with simulated success probabilities within 0.001 of theoretical predictions for all
+          tested configurations. Under a fixed five-qubit hardware budget, the partitioned circuit
+          handles passwords up to seven bits, while the regular Grover circuit becomes infeasible
+          beyond n = 5.
+        </p>
+        <p>
+          The implementation is built entirely in Qiskit 2.3.1 with noise modeling via
+          qiskit-aer and a synthetic IBM-realistic noise model using GenericBackendV2.
+          The noise analysis is documented transparently in the paper.
+        </p>
+        <div class="tag-row">
+          <span class="tag">Grover's algorithm</span>
+          <span class="tag">NISQ hardware</span>
+          <span class="tag">Qiskit</span>
+          <span class="tag">Password security</span>
+          <span class="tag">Quantum noise</span>
+          <span class="tag">Qiskit Aer</span>
+        </div>
+        <div class="card-links">
+          <span style="font-size: 13px; color: var(--col-text-muted);">Preprint coming soon</span>
+        </div>
+      </div>
+
+      <div class="research-card" id="qaoa">
+        <div class="paper-meta" style="margin-bottom: 0.75rem;">
+          <span class="paper-status under-review">Under review &mdash; IEEE CARS 2026</span>
+        </div>
+        <h3>QAOA-Based Multi-Hop Relay Path Selection Using Fade Duration</h3>
+        <p>
+          Cooperative multi-hop relaying extends coverage in 6G networks, and relay path
+          selection directly determines end-to-end reliability. Conventional approaches use
+          signal-to-noise ratio as the link quality measure and either a greedy or exhaustive
+          search as the solver. SNR captures average channel strength but says nothing about
+          the temporal duration of fade events, which drives burst-error behavior in
+          delay-sensitive traffic.
+        </p>
+        <p>
+          This paper replaces SNR with average fade duration (AFD) as the edge metric and
+          solves the resulting combinatorial problem with a quantum approximate optimization
+          algorithm (QAOA). The relay path selection problem is cast as a quadratic unconstrained
+          binary optimization (QUBO) and solved with a depth-two QAOA circuit over an eight-qubit,
+          two-tier decode-and-forward relay network. Results show that QAOA with AFD closely
+          tracks the optimum exhaustive search and reduces total path AFD by up to 37% compared
+          to conventional SNR-based selection. A key finding is that the choice of edge metric
+          matters more than solver quality: the right metric with a near-optimal solver
+          consistently outperforms the wrong metric with an optimal one.
+        </p>
+        <div class="tag-row">
+          <span class="tag">QAOA</span>
+          <span class="tag">6G networks</span>
+          <span class="tag">Relay selection</span>
+          <span class="tag">Average fade duration</span>
+          <span class="tag">QUBO</span>
+          <span class="tag">Quantum optimization</span>
+        </div>
+        <div class="card-links">
+          <span style="font-size: 13px; color: var(--col-text-muted);">Preprint coming soon</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="research-group">
+      <div class="research-group-label">6G wireless &amp; ISAC</div>
+
+      <div class="research-card" id="rsma">
+        <div class="paper-meta" style="margin-bottom: 0.75rem;">
+          <span class="paper-status published">Published &mdash; IEEE Access 2026</span>
+        </div>
+        <h3>RSMA-Enabled RIS-Assisted Integrated Sensing and Communication for 6G: A Comprehensive Survey</h3>
+        <p>
+          Next-generation wireless systems are expected to handle sensing and communication
+          jointly on a shared hardware platform. This survey examines how three enabling
+          technologies, rate-splitting multiple access (RSMA), reconfigurable intelligent
+          surfaces (RIS), and integrated sensing and communication (ISAC), can work together
+          in 6G deployments.
+        </p>
+        <p>
+          RSMA provides a flexible interference management framework that sits between treating
+          interference as noise and fully decoding it. RIS introduces a programmable propagation
+          environment through passive reflecting elements. ISAC enables simultaneous data
+          transmission and environmental sensing without dedicated hardware for each function.
+          The survey covers fundamental principles, mathematical models, and performance metrics
+          for combined RSMA-RIS-ISAC systems. A comparative analysis of 20 recent works
+          demonstrates that RSMA consistently outperforms NOMA and SDMA in spectral efficiency,
+          energy efficiency, and sensing accuracy. The role of machine learning in addressing
+          the non-convex optimization challenges in these systems is also examined, along with
+          open research directions toward practical deployment.
+        </p>
+        <div class="tag-row">
+          <span class="tag">RSMA</span>
+          <span class="tag">RIS</span>
+          <span class="tag">ISAC</span>
+          <span class="tag">6G</span>
+          <span class="tag">Spectral efficiency</span>
+          <span class="tag">Survey</span>
+        </div>
+        <div class="card-links">
+          <a href="https://ieeexplore.ieee.org/abstract/document/11426895" target="_blank" rel="noopener">IEEE Xplore ↗</a>
+          <span style="font-size: 13px; color: var(--col-text-muted);">vol. 14, pp. 38392-38420</span>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Abdul-Manan Zakari Adams &copy; 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/amzadams" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/11426895" target="_blank" rel="noopener">IEEE Xplore</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdul-Manan Zakari Adams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">AMZ</a>
+      <ul class="nav-links">
+        <li><a href="pages/research.html">Research</a></li>
+        <li><a href="pages/publications.html">Publications</a></li>
+        <li><a href="pages/teaching.html">Teaching</a></li>
+        <li><a href="pages/cv.html">CV</a></li>
+        <li><a href="pages/misc.html" class="nav-misc">Misc</a></li>
+      </ul>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-tag">PhD Researcher, University of North Dakota</div>
+      <h1>Abdul-Manan<br>Zakari Adams</h1>
+      <p class="hero-sub">
+        I work at the intersection of quantum computing and next-generation wireless networks,
+        exploring how quantum algorithms can reshape the way future 6G systems make decisions.
+      </p>
+      <div class="hero-links">
+        <a href="pages/research.html" class="btn-primary">View Research</a>
+        <a href="pages/cv.html" class="btn-ghost">Curriculum Vitae</a>
+      </div>
+    </section>
+
+    <section class="section-divider">
+      <div class="divider-line"></div>
+    </section>
+
+    <section class="interests-section">
+      <h2 class="section-label">Research interests</h2>
+      <div class="interest-grid">
+        <div class="interest-card">
+          <span class="interest-icon">⬡</span>
+          <h3>Quantum Computing</h3>
+          <p>Grover's algorithm, QAOA, NISQ hardware limitations, partitioned quantum circuits</p>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">◈</span>
+          <h3>6G Wireless Networks</h3>
+          <p>Cooperative relay systems, reconfigurable intelligent surfaces, rate-splitting multiple access</p>
+        </div>
+        <div class="interest-card">
+          <span class="interest-icon">◇</span>
+          <h3>ISAC Systems</h3>
+          <p>Integrated sensing and communication, joint hardware platforms, 6G deployment challenges</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-section">
+      <h2 class="section-label">Recent work</h2>
+      <div class="paper-list">
+
+        <a href="pages/research.html#qaoa" class="paper-card">
+          <div class="paper-meta">
+            <span class="paper-status under-review">Under review</span>
+            <span class="paper-year">2025</span>
+          </div>
+          <h3>QAOA-Based Multi-Hop Relay Path Selection Using Fade Duration</h3>
+          <p>A quantum approximate optimization approach to relay path selection in 6G networks, using average fade duration as the edge metric instead of SNR.</p>
+          <span class="paper-arrow">→</span>
+        </a>
+
+        <a href="pages/research.html#grover" class="paper-card">
+          <div class="paper-meta">
+            <span class="paper-status under-review">Under review</span>
+            <span class="paper-year">2025</span>
+          </div>
+          <h3>Password Recovery Using Partitioned Grover's Algorithm</h3>
+          <p>A partitioned Grover framework implemented in Qiskit that overcomes NISQ hardware constraints for practical password-space search.</p>
+          <span class="paper-arrow">→</span>
+        </a>
+
+        <a href="https://ieeexplore.ieee.org/abstract/document/11426895" target="_blank" rel="noopener" class="paper-card">
+          <div class="paper-meta">
+            <span class="paper-status published">IEEE Access 2026</span>
+            <span class="paper-year">2026</span>
+          </div>
+          <h3>RSMA-Enabled RIS-Assisted ISAC for 6G: A Comprehensive Survey</h3>
+          <p>Survey of RSMA, RIS, and ISAC integration for 6G, covering 20 recent works and demonstrating consistent gains over NOMA and SDMA.</p>
+          <span class="paper-arrow">↗</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h2 class="section-label">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I am a PhD student and graduate research assistant at the University of North Dakota,
+            working under the supervision of Dr. Ahmed Abdelhadi. My research bridges quantum
+            computing and wireless communications, with a focus on making quantum algorithms
+            practically viable on near-term hardware and applying them to real network problems.
+          </p>
+          <p>
+            Before my current focus on quantum systems, I contributed to foundational work on
+            RSMA, RIS, and ISAC for 6G networks, published in IEEE Access. I am currently
+            preparing two conference papers for IEEE CARS 2026, hosted at UND.
+          </p>
+        </div>
+        <div class="about-meta">
+          <div class="meta-item">
+            <span class="meta-label">Affiliation</span>
+            <span class="meta-value">University of North Dakota</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Supervisor</span>
+            <span class="meta-value">Dr. Ahmed Abdelhadi</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Location</span>
+            <span class="meta-value">Grand Forks, ND</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Contact</span>
+            <span class="meta-value"><a href="mailto:abdulmanan.zakari@und.edu">abdulmanan.zakari@und.edu</a></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>Abdul-Manan Zakari Adams &copy; 2026</span>
+      <div class="footer-links">
+        <a href="https://github.com/amzadams" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://ieeexplore.ieee.org/abstract/document/11426895" target="_blank" rel="noopener">IEEE Xplore</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
